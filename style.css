@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #00f; 
+    }
+    50% {
+        text-shadow: 0 0 20px #00f, 0 0 30px #00f; 
+    }
+    100% {
+        text-shadow: 0 0 10px #00f; 
+    }
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    color: #333; 
+    animation: glow 2s infinite;
+}
+.profile {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:2rem;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    object-fit:contain;
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+}
+h4{
+    color:fuchsia;
+}
+.repo-link{
+    display:inline-block;
+
+    color:green;
+}
+.repo-link:hover{
+    color:red;
+}
+.datetime {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.datetime p {
+    font-size: 18px;
+    margin: 5px;
+}
